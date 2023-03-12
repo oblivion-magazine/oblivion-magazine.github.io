@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <title>Oblivion</title>
+        <link rel="stylesheet" type="text/css" href="../template/css/style.css">
+        <link rel="icon" type="image/x-icon" href="../assets/image/icon.png">
+        <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet'>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    </head>
+    <body>
+        <div class="navbar">
+            <ul>
+                <img src="../assets/image/icon.png" width="50" height="50">
+                <li><a class="active" href="../index.html">[ / ]</a></li>
+                <li><a href="../news.html">[ news ]</a></li>
+                <li><a href="https://whor.email/">[ mail ]</a></li>
+                <li style="float: right;"><a href="../archive.html">[ archive ]</a></li>
+            </ul>
+        </div>
+
+        <div class="container">
+            <h2>
+                Using Python to communicate with the ChatSonic API.
+            </h2>
+            <h3>Author: sp</h3>
+            <p>
+                ChatSonic is a creative AI writing assistant developed by Writesonic that can answer questions and generate high-quality content, such as blog posts, essays, and emails, among others. It uses advanced natural language processing algorithms and machine learning models to produce original and plagiarism-free content, making it an invaluable tool for content creators, writers, and businesses. ChatSonic can be used through a web interface or integrated into other platforms, such as Discord, to provide on-demand writing assistance.
+<br><br>
+1). Create a new Discord application: Go to the Discord Developer Portal and create a new application.<br>
+2). Give it a name and an icon. Then, go to the "Bot" tab on the left-hand side, click "Add Bot", and confirm.<br>
+3). Get your bot's token: Under the "Bot" tab, you should see a "Token" section. Click "Copy" to copy your bot's token.<br><br>
+
+4). Install the Discord.py library: You can use Python to create your Discord bot. Install the Discord.py library by running pip install discord.py in your terminal.<br>
+<br><br>
+5). Create your bot's code:
+                <pre>
+                    <code>
+import discord
+import os
+from dotenv import load_dotenv
+from chatsonic import ChatSonic
+
+load_dotenv()
+TOKEN = os.getenv('DISCORD_TOKEN')
+
+client = discord.Client()
+chatsonic = ChatSonic()
+
+@client.event
+async def on_ready():
+    print(f'{client.user} has connected to Discord!')
+
+@client.event
+async def on_message(message):
+    if message.author == client.user:
+        return
+
+    response = chatsonic.generate_response(message.content)
+    await message.channel.send(response)
+
+client.run(TOKEN)
+                    </code>
+                </pre>
+            </p>
+
+            <p>
+                This code sets up a Discord client, creates a ChatSonic instance, and defines two event handlers: on_ready (which runs when the bot connects to Discord) and on_message (which runs when the bot receives a message). The on_message handler generates a response from ChatSonic based on the message content and sends it back to the Discord channel.
+
+            </p>
+
+            <center><h6>Oblivion 2023 ©</h6></center>
+        </div>
+    </body>
+</html>
