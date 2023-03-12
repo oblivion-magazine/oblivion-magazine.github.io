@@ -91,10 +91,10 @@ body {
 .news-container .flip-card {
     width: 370px;
     height: 165px;
-    perspective: 1000px;
-    margin-left: 13.1px;
+    perspective: 40rem;
+    margin-left: auto;
     margin-top: 15px;
-    margin-right: 50px;
+    margin-right: auto;
     float: right;
 }
   
