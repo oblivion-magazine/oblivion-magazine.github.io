@@ -92,9 +92,9 @@ body {
     width: 370px;
     height: 165px;
     perspective: 1000px;
-    margin-left: auto;
+    margin-left: 40px;
     margin-top: 15px;
-    margin-right: auto;
+    margin-right: 10px;
     float: right;
 }
   
