@@ -89,8 +89,8 @@ body {
 }
 
 .news-container .flip-card {
-    width: 580.5px;
-    height: 150px;
+    width: auto;
+    height: auto;
     perspective: 1000px;
     margin-left: 13.1px;
     margin-top: 15px;
