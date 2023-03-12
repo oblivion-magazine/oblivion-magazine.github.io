@@ -1,0 +1,131 @@
+body {
+    background-color: #111;
+    color: ghostwhite;
+}
+
+.navbar ul {
+    list-style-type: none;
+    font-family: "Ubuntu";
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #111;
+    border-radius: 5px;
+    border: 2px solid #e54908;
+
+}
+
+.navbar li {
+    float: left;
+}
+  
+.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar img {
+    float: left;
+}
+
+.container {
+    font-family: "Ubuntu";
+    font-weight: lighter;
+    background-color: #111;
+    border-radius: 5px;
+    border: 2px solid #e54908;
+    margin-top: 5;
+    padding-bottom: 15px;
+}
+
+.news-container {
+    font-family: "Ubuntu";
+    font-weight: lighter;
+    background-color: #111;
+    border-radius: 5px;
+    border: 2px solid #e54908;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-bottom: 800px;
+}
+
+.container p {
+    margin-left: 20px;
+    color: ghostwhite;
+    margin-top: 15px;
+}
+
+.container h4 {
+    margin-left: 15px;
+}
+
+.container h2 {
+    margin-left: 15px;
+}
+
+.container h6 {
+    margin-bottom: 10px;
+}
+
+.container code {
+    
+    margin-left: 10px;
+}
+
+.news-container h6 {
+    margin-top: 35px;
+    padding-top: 5px;
+}
+
+.news-container .flip-card {
+    width: 580.5px;
+    height: 150px;
+    perspective: 1000px;
+    margin-left: 13.1px;
+    margin-top: 15px;
+    margin-right: 15px;
+    float: right;
+}
+  
+.news-container .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+.news-container .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+.news-container .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+.news-container .flip-card-front {
+    color: ghostwhite;
+    border: 2px solid #e54908;
+    border-radius: 5px;
+  }
+  
+.news-container .flip-card-back {
+    background-color: #111;
+    color: white;
+    transform: rotateY(180deg);
+    border: 2px solid #e54908;
+    border-radius: 5px;
+  }
+
+.container h3 {
+    margin-left: 15px;
+}
