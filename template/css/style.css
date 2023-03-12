@@ -58,6 +58,12 @@ body {
     margin-top: 15px;
 }
 
+.container pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    text-align: justify;
+}
+
 .container h4 {
     margin-left: 15px;
 }
