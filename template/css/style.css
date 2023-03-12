@@ -89,13 +89,13 @@ body {
 }
 
 .news-container .flip-card {
-    width: 370px;
-    height: 165px;
-    perspective: 1000px;
-    margin-left: 40px;
+    width: 580.5px;
+    height: 150px;
+    perspective: 40rem;
+    margin-left: 13.1px;
     margin-top: 15px;
-    margin-right: 10px;
-    float: right;
+    margin-right: 15px;
+    float: left;
 }
   
 .news-container .flip-card-inner {
